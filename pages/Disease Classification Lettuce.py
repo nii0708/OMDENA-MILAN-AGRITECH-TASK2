@@ -25,6 +25,8 @@ class_idx_to_name_dict  = {
     1: "Fungal Infection",
     2: "Healthy Lettuce"
 }
+#change sample image path
+sample_image_path = "./resources/sample_images/lettuce"
 #change the xlsx of recomendation (always use the template format, pass the rows as 'No Data' if here isn't any justified action for the disease)
 rec_path = './resources/actionable/lettuce recommendations.xlsx'
 #change model path
@@ -46,8 +48,8 @@ st.divider()
 #body
 
 #data
-example_images = os.listdir("./resources/sample_images/lettuce")
-example_images = [os.path.join("./resources/sample_images/lettuce", img) for img in example_images]
+example_images = os.listdir(sample_image_path)
+example_images = [os.path.join(sample_image_path, img) for img in example_images]
 
 #body widgets
 st.header('You can classify by choose an example or upload a photo')
