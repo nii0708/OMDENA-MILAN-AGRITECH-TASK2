@@ -1,0 +1,4 @@
+{"model_name": "resnet_18",
+"Train F1-macro": 0.8391, 
+"Test F1-macro": 0.8106,
+"energy":-0.2456}
